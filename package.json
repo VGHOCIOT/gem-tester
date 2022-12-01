@@ -1,0 +1,23 @@
+{
+  "name": "gem-tester",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@storybook/addon-controls": "^6.5.13",
+    "@storybook/builder-webpack5": "^6.5.13",
+    "@storybook/manager-webpack5": "^6.5.13",
+    "@storybook/server": "^6.5.13",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "@rails/webpacker": "5.4.3",
+    "bootstrap": "^5.2.2"
+  },
+  "scripts": {
+    "storybook": "start-storybook"
+  }
+}

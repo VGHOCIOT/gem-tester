@@ -1,0 +1,21 @@
+{
+  "title": "Subhead Component",
+  "stories": [
+    {
+      "name": "subheader_1",
+      "parameters": {
+        "server": {
+          "id": "subhead_component/subheader_1"
+        }
+      }
+    },
+    {
+      "name": "subheader_2",
+      "parameters": {
+        "server": {
+          "id": "subhead_component/subheader_2"
+        }
+      }
+    }
+  ]
+}
