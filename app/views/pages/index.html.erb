@@ -1,5 +1,5 @@
 <% content_for :page_title do %>
-   Kitchen Sink
+   <%= t '.title' %>
 <% end %>
 
 <article class="prose m-24">
@@ -7,6 +7,7 @@
 <p>This page will demo our ViewComponents</p>
 
 <%= render SubheadComponent.new(title: "Subheader",description: "this is the content") %>
+<%= render RecipeCardComponent.new(title: @recipes.first.title, author: "There", popularity: "popular", rating: 1)%>
 <!-- When rendering a new SeparatorComponent make sure that values of the recipe model for arguments if possible here? Might need to make pages inherit the recipe class -->
 </article>
 

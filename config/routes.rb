@@ -3,9 +3,13 @@ Rails.application.routes.draw do
   resources :steps
   resources :cuisines
   resources :recipes
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  scope "(:locale)", locale: /# {I18n.available_locales.join("|")} / do 
 
-  # Defines the root path route ("/")
-  # root "articles#index"
-  get "pages/index"
+    resources :pages
+    # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+
+    # Defines the root path route ("/")
+    # root "articles#index"
+    root "pages#index"
+  end 
 end

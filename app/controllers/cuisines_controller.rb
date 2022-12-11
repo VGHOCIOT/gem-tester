@@ -46,6 +46,6 @@ class CuisinesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def cuisine_params
-      params.require(:cuisine).permit(:type)
+      params.require(:cuisine).permit(:name)
     end
 end

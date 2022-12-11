@@ -25,6 +25,6 @@ module App
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
     config.view_component.show_previews = true
-
+    config.i18n.available_locales = [:en, :fr]
   end
 end

@@ -8,9 +8,12 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     </head>
-
     <body>
         <div class="container-fluid mt-2">
+            <ul>
+                <li><%= link_to 'English', root_path(locale: :en) %></li>
+                <li><%= link_to 'Français', root_path(locale: :fr) %></li>
+            </ul>
             <%= content_for?(:content) ? yield(:content) : yield %>
         </div><!-- .container-fluid -->
     </body>

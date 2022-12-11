@@ -1,0 +1,14 @@
+<div class="card">
+    <!-- image placeholder with badge overlap /> <-->
+    <span class="badge"><%= render PopularityBadgeComponent.new(title: @popularity) %></span>
+    <div class= "card-body">
+        <%= @title %>
+        <%= @author %>
+    </div>
+    <% (1..5).each do |star| %>
+        <% if star <= @rating %>
+            <%# <i class="bi-star-fill text-warning"></i> %>
+        <% else %>
+        <% end %>
+    <% end %>
+</div>
